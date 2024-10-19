@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="MainContainer flex items-center justify-center h-screen w-full p-6  bg-purple-300">
+
+        <div class="formContainer flex items-center justify-center  bg-blue-50 p-10 rounded-lg">
+            <form action="">
+                <h1 class="font-bold">Currency Converter</h1>
+                <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text" class="w-full rounded-lg border-2 border-gray-200 p-2">
+            </div>
+                <div class="flex justify-between py-4 items-center">
+                    <div class="dropdown">
+                        <p>From</p>
+                        <div class="from selectContainer flex p-2 rounded-lg border-2 border-gray-200 bg-white">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="" class=" image size-8">
+                            <select name="from" id="from" class=""></select>
+                        </div>
+                       
+                    </div>
+                    <div><i class="fa-solid fa-arrow-right-arrow-left px-6 pt-4 font-extrabold"></i></div>
+                    <div class="dropdown">
+                        <p>To</p>
+                        <div class=" to selectContainer flex p-2 rounded-lg border-2 border-gray-200 bg-white">
+                            <img src="https://flagsapi.com/PK/flat/64.png" alt="" class="size-8 image">
+                            <select name="to" id="to"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg p-3"></div>
+                <button class="bg-fuchsia-950 text-white p-2 rounded-lg w-full">Get Exchange Rate</button>
+            </form>
+        </div>
+    </div>
+
+<script src="codes.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
